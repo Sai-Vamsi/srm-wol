@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    
+    <title>Document</title>
+</head>
+<body class="abc">
+    <h1 id="xyz">Application Form</h1>
+    <br>
+    <div >
+    <form>
+        First Name(4-10):&emsp;&emsp;&emsp;&emsp;&emsp;Last Name:(4-10)<br>
+        <input type="text" id="firstname" onblur="validfn()" required ><span id="fnss"></span>&emsp;&emsp;
+        <input type="text" id="lastname" onblur="validln()" required ><span id="lnss"></span>&emsp;&emsp;<br><br>
+        Email Id:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Phone No:<br>
+        <input type="text" name="email" placeholder="abcde@gmail.com" required>&emsp;&emsp;
+        <input type="number" name="phone" required placeholder="xxx-xxx-xxxx"><br><br>
+        Address:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Pin code:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;City:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;State:<br>
+        <input type="text" name="address" required>&emsp;&emsp;
+        <input type="number" name="pin" required placeholder="xxxx">&emsp;&emsp;
+        <input type="text" name="city" required>&emsp;&emsp;
+        <select id="cars">
+            <option value="volvo">Tamil Nadu</option>
+            <option value="saab">Karnataka</option>
+            <option value="opel">Uttar Pradesh</option>
+            <option value="audi">Assam</option>
+          </select><br><br>
+        Gender:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Age<br>
+        <input type="radio" name="gen">Male&emsp;&emsp;
+        <input type="radio" name="gen">Female&emsp;&emsp;
+        <input type="number" id="age"  onblur="agecheck()"><span id="ag"></span><br><br>
+        BIO:<br><br>
+        <textarea></textarea>
+       
+        
+    </form>
+    </div>
+    
+</body>
+</html>
